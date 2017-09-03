@@ -1,0 +1,356 @@
+[
+  {
+    "id": 1,
+    "word": "Bord",
+    "article": "ett",
+    "memriselevel": 0
+  },
+  {
+    "id": 2,
+    "word": "Stol",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+  "id": 3,
+  "word": "Soffa",
+  "article": "en",
+  "memriselevel": 0
+  },
+  {
+    "id": 4,
+    "word": "Dörr",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 5,
+    "word": "Balkong",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 6,
+    "word": "Bil",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 7,
+    "word": "Bord",
+    "article": "ett",
+    "memriselevel": 0
+  },
+  {
+    "id": 8,
+    "word": "Cykel",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 9,
+    "word": "Katt",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 10,
+    "word": "Hus",
+    "article": "ett",
+    "memriselevel": 0
+  },
+  {
+    "id": 11,
+    "word": "Hund",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 12,
+    "word": "Väg",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 13,
+    "word": "Kök",
+    "article": "ett",
+    "memriselevel": 0
+  },
+  {
+    "id": 14,
+    "word": "Hall",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 15,
+    "word": "Rum",
+    "article": "ett",
+    "memriselevel": 0
+  },
+  {
+    "id": 16,
+    "word": "Lampa",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 17,
+    "word": "Badrum",
+    "article": "ett",
+    "memriselevel": 0
+  },
+  {
+    "id": 18,
+    "word": "Dusch",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 19,
+    "word": "Toalett",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 20,
+    "word": "Hand",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 21,
+    "word": "Arm",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 22,
+    "word": "Finger",
+    "article": "ett",
+    "memriselevel": 0
+  },
+  {
+    "id": 23,
+    "word": "Fot",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 24,
+    "word": "Hår",
+    "article": "ett",
+    "memriselevel": 0
+  },
+  {
+    "id": 25,
+    "word": "Man",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 26,
+    "word": "Kvinna",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 27,
+    "word": "Son",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 28,
+    "word": "Dotter",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 29,
+    "word": "Bror",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 30,
+    "word": "Syster",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+  "id": 31,
+  "word": "Sol",
+  "article": "en",
+  "memriselevel": 0
+  },
+  {
+    "id": 32,
+    "word": "Måne",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 33,
+    "word": "Regn",
+    "article": "ett",
+    "memriselevel": 0
+  },
+  {
+    "id": 34,
+    "word": "Vind",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 35,
+    "word": "Dag",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 36,
+    "word": "Natt",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 37,
+    "word": "Morgon",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 38,
+    "word": "Gräs",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 39,
+    "word": "Träd",
+    "article": "ett",
+    "memriselevel": 0
+  },
+  {
+    "id": 40,
+    "word": "Is",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 41,
+    "word": "Fisk",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 42,
+    "word": "Skida",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 43,
+    "word": "Bok",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 44,
+    "word": "Papper",
+    "article": "ett",
+    "memriselevel": 0
+  },
+  {
+    "id": 45,
+    "word": "Penna",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 46,
+    "word": "Lejon",
+    "article": "ett",
+    "memriselevel": 0
+  },
+  {
+    "id": 47,
+    "word": "Dator",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+  "id": 49,
+  "word": "Nätverk",
+  "article": "ett",
+  "memriselevel": 0
+},
+  {
+    "id": 50,
+    "word": "Korridor",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 51,
+    "word": "Mat",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 52,
+    "word": "Dricka",
+    "article": "en",
+    "memriselevel": 0
+  },
+  {
+    "id": 53,
+    "word": "Kniv",
+    "article": "en",
+    "memriselevel": 0
+  },{
+  "id": 54,
+  "word": "Glas",
+  "article": "ett",
+  "memriselevel": 0
+},{
+  "id": 55,
+  "word": "Kopp",
+  "article": "en",
+  "memriselevel": 0
+},{
+  "id": 56,
+  "word": "Kaffe",
+  "article": "en",
+  "memriselevel": 0
+},{
+  "id": 57,
+  "word": "Te",
+  "article": "en",
+  "memriselevel": 0
+},{
+  "id": 58,
+  "word": "Vatten",
+  "article": "ett",
+  "memriselevel": 0
+},{
+  "id": 59,
+  "word": "Soppa",
+  "article": "en",
+  "memriselevel": 0
+},{
+  "id": 60,
+  "word": "Sallad",
+  "article": "en",
+  "memriselevel": 0
+},{
+  "id": 61,
+  "word": "Pizza",
+  "article": "en",
+  "memriselevel": 0
+}
+
+
+]

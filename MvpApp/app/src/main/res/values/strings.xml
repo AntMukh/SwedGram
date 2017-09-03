@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">En Ett words</string>
+    <string name="title_activity_quiz">QuizActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_info">Info</string>
+
+    <string name="enetturl">https://en.wikibooks.org/wiki/Swedish/Nouns</string>
+
+</resources>
