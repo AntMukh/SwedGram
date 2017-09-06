@@ -6,12 +6,14 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Vibrator;
+import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -32,14 +34,27 @@ import com.example.user.mvpapp.utils.Constants;
 
 import javax.inject.Inject;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.Optional;
+
 public class QuizActivity extends BaseActivity
         implements QuizMvpView, NavigationView.OnNavigationItemSelectedListener {
 
     @Inject
     QuizMvpPresenter<QuizMvpView> mPresenter;
+
+    @BindView(R.id.drawer_layout)
     DrawerLayout drawer;
 
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
+
+    @BindView(R.id.nav_view)
+    NavigationView navigationView;
+
     View cardView;
+
     Animation changeAnim;
     MediaPlayer bPlayer;
 
@@ -49,23 +64,20 @@ public class QuizActivity extends BaseActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
-        getActivityComponent().inject(this);
         //inflate cardView
-        inflateCardView();
+       // inflateCardView();
+        getActivityComponent().inject(this);
+        setUnBinder(ButterKnife.bind(this));
 
         changeAnim = AnimationUtils.loadAnimation(this.getApplicationContext(), R.anim.change);
         mPresenter.onAttached(this);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     void inflateCardView() {
@@ -77,7 +89,6 @@ public class QuizActivity extends BaseActivity
                 mPresenter.showAnswer(Constants.EN_BUTTON);
             }
         });
-
         cardView.findViewById(R.id.ettButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,17 +99,14 @@ public class QuizActivity extends BaseActivity
     }
 
     public void setQuestion(String word) {
-        //LayoutInflater mInflater = getLayoutInflater();
-        //cardView = mInflater.inflate(R.layout.cardview_layout, null, false);
+
         inflateCardView();
         TextView textView = (TextView) cardView.findViewById(R.id.cardWord);
         textView.setText(word);
         Button enButton = (Button) cardView.findViewById(R.id.enButton);
         enButton.setBackgroundColor(getResources().getColor(R.color.cardview_shadow_start_color));
-
         Button ettButton = (Button) cardView.findViewById(R.id.ettButton);
         ettButton.setBackgroundColor(getResources().getColor(R.color.cardview_shadow_start_color));
-
         RelativeLayout cardPlace = ((RelativeLayout) findViewById(R.id.cardFrame));
         cardPlace.removeAllViews();
         cardPlace.addView(cardView);

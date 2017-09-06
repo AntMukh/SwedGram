@@ -17,6 +17,9 @@ import com.example.user.mvpapp.ui.common.BaseFragment;
 
 import javax.inject.Inject;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 
 /**
  * Created by user on 01.09.2017.
@@ -27,6 +30,13 @@ public class InfoFragment extends BaseFragment implements InfoMvpView {
     InfoMvpPresenter<InfoMvpView> mPresenter;
 
     View infoView;
+
+    @BindView(R.id.webView)
+    WebView webView;
+
+    @BindView(R.id.progressBar)
+    ProgressBar progressBar;
+
     public static final String TAG = "InfoFragment";
 
     public static final String LOG_TAG = InfoFragment.class.getSimpleName();
@@ -43,18 +53,20 @@ public class InfoFragment extends BaseFragment implements InfoMvpView {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         infoView = inflater.inflate(R.layout.fragment_info, container, false);
-        WebView webView = (WebView) infoView.findViewById(R.id.webView);
+
+        setUnBinder(ButterKnife.bind(this, infoView));
+
         String url = getResources().getString(R.string.enetturl);
         webView.loadUrl(url);
-        ProgressBar progressBar = (ProgressBar) infoView.findViewById(R.id.progressBar);
+
         progressBar.setAlpha(1);
         webView.setWebChromeClient(new WebChromeClient() {
             public void onProgressChanged(WebView v, int progress) {
                 // Activities and WebViews measure progress with different scales.
                 // The progress meter will automatically disappear when we reach 100%
-                ((ProgressBar) infoView.findViewById(R.id.progressBar)).setProgress(progress);
+                    progressBar.setProgress(progress);
                 if (progress == 100) {
-                    ((ProgressBar) infoView.findViewById(R.id.progressBar)).setAlpha(0);
+                    progressBar.setAlpha(0);
                 }
             }
         });

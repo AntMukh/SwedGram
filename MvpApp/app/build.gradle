@@ -30,6 +30,10 @@ dependencies {
     compile "com.android.support:support-vector-drawable:$rootProject.supportLibraryVersion"
     compile "com.android.support:animated-vector-drawable:$rootProject.supportLibraryVersion"
 
+    compile "com.jakewharton:butterknife:$rootProject.butterKnifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnifeVersion"
+
+
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })

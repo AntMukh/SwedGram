@@ -9,11 +9,15 @@ import com.example.user.mvpapp.di.component.ActivityComponent;
 import com.example.user.mvpapp.di.component.DaggerActivityComponent;
 import com.example.user.mvpapp.di.module.ActivityModule;
 
+import butterknife.Unbinder;
+
 
 public abstract class BaseActivity extends AppCompatActivity
         implements MvpView {
 
     private ActivityComponent mActivityComponent;
+
+    private Unbinder mUnBinder;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,7 +38,9 @@ public abstract class BaseActivity extends AppCompatActivity
     }
 
     public void onFragmentDetached(String tag) {
+    }
 
-
+    public void setUnBinder(Unbinder unBinder) {
+        mUnBinder = unBinder;
     }
 }
